@@ -173,6 +173,12 @@
             "PWM_1": "P5_5",
             "PWM_2": "P5_6",
             "PWM_3": "P9_7"
+        },
+        "NUVOTON": {
+            "target.device_has_remove": ["ANALOGOUT"]
+        },
+        "NUMAKER_IOT_M487": {
+            "target.device_has_remove": ["ANALOGIN"]
         }
     }
 }

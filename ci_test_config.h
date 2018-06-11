@@ -16,7 +16,11 @@
 #ifndef CI_TEST_CONFIG_H
 #define CI_TEST_CONFIG_H
 
+#if MBED_MAJOR_VERSION >= 6
 #include "utest_print.h"
+#else
+#include "utest_serial.h"
+#endif
 
 #if defined(MBED_CONF_APP_DEBUG_MSG) && (MBED_CONF_APP_DEBUG_MSG != 0)
 #define DEBUG_PRINTF(...) do { utest_printf(__VA_ARGS__); } while(0)

@@ -33,7 +33,7 @@ Case cases[] = {
     Case("PWM - is Pin 0 connected?", test_PWM_NC<MBED_CONF_APP_PWM_0>, greentea_failure_handler),
     Case("PWM - is Pin 1 connected?", test_PWM_NC<MBED_CONF_APP_PWM_1>, greentea_failure_handler),
     Case("PWM - is Pin 2 connected?", test_PWM_NC<MBED_CONF_APP_PWM_2>, greentea_failure_handler),
-    Case("PWM - is Pin 3 connected?", test_PWM_NC<MBED_CONF_APP_PWM_3>, greentea_failure_handler),
+    //Case("PWM - is Pin 3 connected?", test_PWM_NC<MBED_CONF_APP_PWM_3>, greentea_failure_handler),
 
 };
 

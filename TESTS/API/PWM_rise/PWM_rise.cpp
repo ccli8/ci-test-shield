@@ -82,17 +82,17 @@ void pwm_define_test(){
   PwmOut pwm0(MBED_CONF_APP_PWM_0);
   PwmOut pwm1(MBED_CONF_APP_PWM_1);
   PwmOut pwm2(MBED_CONF_APP_PWM_2);
-  PwmOut pwm3(MBED_CONF_APP_PWM_3);
+  //PwmOut pwm3(MBED_CONF_APP_PWM_3);
 
   pwm0.period(1.0f);
   pwm1.period(1.0f);
   pwm2.period(1.0f);
-  pwm3.period(1.0f);
+  //pwm3.period(1.0f);
 
   pwm0.write(0.5f);
   pwm1.write(0.5f);
   pwm2.write(0.5f);
-  pwm3.write(0.5f);
+  //pwm3.write(0.5f);
 
   TEST_ASSERT_MESSAGE(true,"The fact that it hasnt errored out proves this passes the sniff test");
 }
@@ -119,7 +119,7 @@ Case cases[] = {
   Case("PWM_0 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_0, MBED_CONF_APP_DIO_2, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
   Case("PWM_1 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_1, MBED_CONF_APP_DIO_4, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
   Case("PWM_2 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_2, MBED_CONF_APP_DIO_7, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
-  Case("PWM_3 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_8, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
+  //Case("PWM_3 Frequency 30ms",  PWM_Period_Test< MBED_CONF_APP_PWM_3, MBED_CONF_APP_DIO_8, 30,  100 >, greentea_failure_handler),  // Test at 30ms 100 times, default 50%duty cycle
 
 };
 
